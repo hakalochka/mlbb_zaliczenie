@@ -1,0 +1,80 @@
+body {
+  background-image: linear-gradient(rgb(35, 38, 50), rgb(49, 81, 150));
+}
+
+#main {
+  margin: auto;
+  margin-top: 42px;
+  width: 95%;
+}
+
+.icon {
+  width: 8.7vw;
+  aspect-ratio: 1/1;
+}
+.star {
+  width: 0.7vw;
+}
+
+#new,
+#old {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  align-items: center;
+}
+
+#new,
+#old > p {
+  text-align: center;
+  font-size: 1vw;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+
+  width: 50%;
+
+  margin: 35px auto;
+  padding: 30px;
+
+  text-align: center;
+}
+
+#form > h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+#form > h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+input {
+  margin: 8px;
+  height: 20px;
+  font-size: 12px;
+
+  background-color: rgb(212, 176, 124);
+  border-color: rgb(154, 118, 74);
+  border-style: solid;
+  border-radius: 5px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+
+  cursor: pointer;
+
+  background-image: url(/images/nav_bg_active.jpg);
+  border: none;
+  border-radius: 8px;
+}

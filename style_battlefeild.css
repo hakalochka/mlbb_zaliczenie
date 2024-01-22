@@ -1,0 +1,14 @@
+#main {
+  margin-top: 42px;
+  width: 100%;
+  /* resize: both; */
+  box-sizing: border-box;
+  overflow: hidden;
+  /* z-index: -6; */
+}
+
+@media (max-width: 590px) {
+  #main {
+    margin-top: 37px;
+  }
+}

@@ -1,0 +1,47 @@
+body {
+  background-image: url("/images/bg3_v2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main {
+  width: 100%;
+  /* margin: auto; */
+  text-align: center;
+}
+
+#logo {
+  width: 50%;
+  /* margin: auto; */
+  margin-top: 115px;
+}
+
+#text {
+  width: 66%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* height: auto; */
+  padding: 50px 0;
+  margin-top: 40px;
+  border-radius: 25px;
+}
+
+p {
+  width: 83%;
+  margin: auto;
+}
+
+#para1 {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 670px) {
+  #text {
+    width: 75%;
+    font-size: 15px;
+  }
+}

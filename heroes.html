@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mylana Herasymenko" />
+    <meta name="description" content="Strona zaliczeniowa" />
+    <meta name="keywords" content="MLBB, mobile legends, game" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Heroes</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/style_heroes.css" />
+    <link rel="stylesheet" href="/style_general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li id="home">
+          <a href="/index.html">Home</a>
+        </li>
+        <li><a href="/ranks.html">Ranks</a></li>
+        <li class="active"><a href="/heroes.html">Heroes</a></li>
+        <li><a href="/roles.html">Roles</a></li>
+        <li><a href="/battlefeild.html">Battlefield</a></li>
+        <li><a href="/modes.html">Modes</a></li>
+      </ul>
+    </nav>
+    <!-- navbar -->
+
+    <div id="main">
+      <div id="role">
+        <p style="border-top: 1px rgb(68, 148, 192) solid" class="active_p">
+          Tank
+        </p>
+        <p>Fighter</p>
+        <p>Assassin</p>
+        <p>Marksman</p>
+        <p>Mage</p>
+        <p>Support</p>
+      </div>
+      <div id="slider">
+        <div id="tank">
+          <div class="slideshow-container">
+            <div class="mySlides1 fade">
+              <img src="/images/Heroes/Tank/tigreal.jpg" style="width: 100%" />
+              <div class="text">Tigreal</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <img src="/images/Heroes/Tank/franco.jpg" style="width: 100%" />
+              <div class="text">Franko</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <img src="/images/Heroes/Tank/akai.jpg" style="width: 100%" />
+              <div class="text">Akai</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <img src="/images/Heroes/Tank/alice.jpg" style="width: 100%" />
+              <div class="text">Alice</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <img src="/images/Heroes/Tank/khufra.jpg" style="width: 100%" />
+              <div class="text">Khufra</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <img src="/images/Heroes/Tank/lolita.jpg" style="width: 100%" />
+              <div class="text">Lolita</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+            <a class="next" onclick="plusSlides(1, 0)">❯</a>
+          </div>
+
+          <br />
+
+          <!-- <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1, 0)"></span>
+            <span class="dot" onclick="currentSlide(2, 0)"></span>
+            <span class="dot" onclick="currentSlide(3, 0)"></span>
+            <span class="dot" onclick="currentSlide(4, 0)"></span>
+            <span class="dot" onclick="currentSlide(5, 0)"></span>
+            <span class="dot" onclick="currentSlide(6, 0)"></span>
+          </div> -->
+        </div>
+        <!-- tank -->
+        <div id="fighter">
+          <div class="slideshow-container">
+            <div class="mySlides2 fade">
+              <img
+                src="/images/Heroes/Fighter/dyrroth.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Dyrroth</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <img src="/images/Heroes/Fighter/freya.jpg" style="width: 100%" />
+              <div class="text">Freya</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <img
+                src="/images/Heroes/Fighter/alucard.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Alucard</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <img
+                src="/images/Heroes/Fighter/martis.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Martis</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <img
+                src="/images/Heroes/Fighter/guinevere.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Guinevere</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <img src="/images/Heroes/Fighter/ruby.jpg" style="width: 100%" />
+              <div class="text">Ruby</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+            <a class="next" onclick="plusSlides(1, 1)">❯</a>
+          </div>
+        </div>
+        <!-- fighter -->
+
+        <div id="assassin">
+          <div class="slideshow-container">
+            <div class="mySlides3 fade">
+              <img
+                src="/images/Heroes/Assassin/fanny.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Fanny</div>
+            </div>
+
+            <div class="mySlides3 fade">
+              <img
+                src="/images/Heroes/Assassin/benedetta.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Benedetta</div>
+            </div>
+
+            <div class="mySlides3 fade">
+              <img
+                src="/images/Heroes/Assassin/hayabusa.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Hayabusa</div>
+            </div>
+
+            <div class="mySlides3 fade">
+              <img src="/images/Heroes/Assassin/ling.jpg" style="width: 100%" />
+              <div class="text">Ling</div>
+            </div>
+
+            <div class="mySlides3 fade">
+              <img
+                src="/images/Heroes/Assassin/gusion.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Gusion</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+            <a class="next" onclick="plusSlides(1, 2)">❯</a>
+          </div>
+        </div>
+        <!-- assassin -->
+
+        <div id="mm">
+          <div class="slideshow-container">
+            <div class="mySlides4 fade">
+              <img src="/images/Heroes/MM/layla.jpg" style="width: 100%" />
+              <div class="text">Layla</div>
+            </div>
+
+            <div class="mySlides4 fade">
+              <img src="/images/Heroes/MM/claude.jpg" style="width: 100%" />
+              <div class="text">Claude</div>
+            </div>
+
+            <div class="mySlides4 fade">
+              <img src="/images/Heroes/MM/wanwan.jpg" style="width: 100%" />
+              <div class="text">Wanwan</div>
+            </div>
+
+            <div class="mySlides4 fade">
+              <img src="/images/Heroes/MM/hanabi.jpg" style="width: 100%" />
+              <div class="text">Hanabi</div>
+            </div>
+
+            <div class="mySlides4 fade">
+              <img src="/images/Heroes/MM/brody.jpg" style="width: 100%" />
+              <div class="text">Brody</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+            <a class="next" onclick="plusSlides(1, 3)">❯</a>
+          </div>
+        </div>
+        <!-- mm -->
+
+        <div id="mage">
+          <div class="slideshow-container">
+            <div class="mySlides5 fade">
+              <img src="/images/Heroes/Mage/lunox.jpg" style="width: 100%" />
+              <div class="text">Lunox</div>
+            </div>
+
+            <div class="mySlides5 fade">
+              <img src="/images/Heroes/Mage/vale.jpg" style="width: 100%" />
+              <div class="text">Vale</div>
+            </div>
+
+            <div class="mySlides5 fade">
+              <img src="/images/Heroes/Mage/valir.jpg" style="width: 100%" />
+              <div class="text">Valir</div>
+            </div>
+
+            <div class="mySlides5 fade">
+              <img src="/images/Heroes/Mage/kagura.jpg" style="width: 100%" />
+              <div class="text">Kagura</div>
+            </div>
+
+            <div class="mySlides5 fade">
+              <img src="/images/Heroes/Mage/nana.jpg" style="width: 100%" />
+              <div class="text">Nana</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 4)">❮</a>
+            <a class="next" onclick="plusSlides(1, 4)">❯</a>
+          </div>
+        </div>
+        <!-- mage -->
+
+        <div id="supp">
+          <div class="slideshow-container">
+            <div class="mySlides6 fade">
+              <img src="/images/Heroes/Supp/mathilda.jpg" style="width: 100%" />
+              <div class="text">Mathilda</div>
+            </div>
+
+            <div class="mySlides6 fade">
+              <img src="/images/Heroes/Supp/diggie.jpg" style="width: 100%" />
+              <div class="text">Diggie</div>
+            </div>
+
+            <div class="mySlides6 fade">
+              <img src="/images/Heroes/Supp/floryn.jpg" style="width: 100%" />
+              <div class="text">Floryn</div>
+            </div>
+
+            <div class="mySlides6 fade">
+              <img src="/images/Heroes/Supp/estes.jpg" style="width: 100%" />
+              <div class="text">Estes</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 5)">❮</a>
+            <a class="next" onclick="plusSlides(1, 5)">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider -->
+      <script>
+        let slideIndex = [1, 1, 1, 1, 1, 1];
+        /* Class the members of each slideshow group with different CSS classes */
+        let slideId = [
+          "mySlides1",
+          "mySlides2",
+          "mySlides3",
+          "mySlides4",
+          "mySlides5",
+          "mySlides6",
+        ];
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+        showSlides(1, 5);
+
+        function plusSlides(n, no) {
+          showSlides((slideIndex[no] += n), no);
+        }
+
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {
+            slideIndex[no] = 1;
+          }
+          if (n < 1) {
+            slideIndex[no] = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex[no] - 1].style.display = "block";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+          var roleElements = document.querySelectorAll("#role > p");
+          var tank = document.getElementById("tank");
+          var fighter = document.getElementById("fighter");
+          var assassin = document.getElementById("assassin");
+          var mm = document.getElementById("mm");
+          var mage = document.getElementById("mage");
+          var supp = document.getElementById("supp");
+
+          roleElements.forEach(function (element) {
+            element.addEventListener("click", function () {
+              // Remove the 'active_p' class from all elements
+              roleElements.forEach(function (el) {
+                el.classList.remove("active_p");
+              });
+
+              // Add the 'active_p' class to the clicked element
+              element.classList.add("active_p");
+
+              // Check if the clicked element is the first one (Tank)
+              if (
+                element === roleElements[0] &&
+                !tank.classList.contains("active_p")
+              ) {
+                tank.style.display = "block";
+              } else {
+                tank.style.display = "none";
+              }
+
+              if (
+                element === roleElements[1] &&
+                !fighter.classList.contains("active_p")
+              ) {
+                fighter.style.display = "block";
+              } else {
+                fighter.style.display = "none";
+              }
+
+              if (
+                element === roleElements[2] &&
+                !assassin.classList.contains("active_p")
+              ) {
+                assassin.style.display = "block";
+              } else {
+                assassin.style.display = "none";
+              }
+
+              if (
+                element === roleElements[3] &&
+                !mm.classList.contains("active_p")
+              ) {
+                mm.style.display = "block";
+              } else {
+                mm.style.display = "none";
+              }
+
+              if (
+                element === roleElements[4] &&
+                !mage.classList.contains("active_p")
+              ) {
+                mage.style.display = "block";
+              } else {
+                mage.style.display = "none";
+              }
+
+              if (
+                element === roleElements[5] &&
+                !supp.classList.contains("active_p")
+              ) {
+                supp.style.display = "block";
+              } else {
+                supp.style.display = "none";
+              }
+            });
+          });
+
+          // Your existing code for handling the slideshow (plusSlides and currentSlide functions)
+        });
+      </script>
+    </div>
+    <!-- main -->
+    <footer></footer>
+  </body>
+</html>

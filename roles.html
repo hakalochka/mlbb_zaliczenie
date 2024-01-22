@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mylana Herasymenko" />
+    <meta name="description" content="Strona zaliczeniowa" />
+    <meta name="keywords" content="MLBB, mobile legends, game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Roles</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/style_roles.css" />
+    <link rel="stylesheet" href="/style_general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li id="home">
+          <a href="/index.html">Home</a>
+        </li>
+        <li><a href="/ranks.html">Ranks</a></li>
+        <li><a href="/heroes.html">Heroes</a></li>
+        <li class="active"><a href="/roles.html">Roles</a></li>
+        <li><a href="/battlefeild.html">Battlefield</a></li>
+        <li><a href="/modes.html">Modes</a></li>
+      </ul>
+    </nav>
+    <!-- navbar -->
+    <div class="resizableWindow" id="main">
+      <div id="battlefeild">
+        <a href="#gold"
+          ><img
+            class="map_animation"
+            id="gold_b"
+            src="/images/lines/gold.png"
+            alt="gold lane"
+        /></a>
+        <a href="#exp"
+          ><img
+            class="map_animation"
+            id="exp_b"
+            src="/images/lines/exp.png"
+            alt="exp lane"
+        /></a>
+        <a href="#jgl"
+          ><img
+            class="map_animation"
+            id="jgl_b"
+            src="/images/lines/jgl.png"
+            alt="jungle"
+        /></a>
+        <a href="#mid"
+          ><img
+            class="map_animation"
+            id="mid_b"
+            src="/images/lines/mid.png"
+            alt="mid lane"
+        /></a>
+        <a href="#roam"
+          ><img
+            class="map_animation"
+            id="roam_b"
+            src="/images/lines/roam.png"
+            alt="roam"
+        /></a>
+      </div>
+      <!-- line icons -->
+    </div>
+    <div id="text">
+      <div class="container">
+        <div>
+          <a id="mid"
+            ><img class="icon" src="/images/lines/mid.png" alt="mid lane" />
+          </a>
+          <h2>Mid Lane</h2>
+          <p>
+            <span class="red">Mages</span> excel in lane clearing and are
+            recommended to take the <span class="yellow">Mid Lane</span> to help
+            other lanes whenever needed.
+            <br />
+            With decent AOE damage for lane clearing,
+            <span class="red">Mages</span>
+            can take advantage of the shorter lane to farm safely in the early
+            game and roam later.
+          </p>
+        </div>
+        <div>
+          <h3>Unit Sight</h3>
+          <p>
+            Each minion grants sight over surrounding 8 units but cannot detect
+            enemies in the bush or the Camouflage state.
+          </p>
+          <h3>Minion Abilities</h3>
+          <p>
+            <span class="yellow">Infantry Squad</span>: The first 10 waves
+            consist of 4 regular minions and no cannon minions.
+            <br />
+            <span class="yellow">Surging Morale</span>: Minions gain 10 extra
+            Movement Speed per minute.
+            <br />
+            <span class="yellow">Charging Horn</span>: Once the enemy's
+            <span class="yellow">Base Turret</span> is destroyed, stronger
+            <span class="yellow">Super Minions</span> will begin to spawn in the
+            corresponding lane.
+          </p>
+        </div>
+      </div>
+      <!-- mid -->
+
+      <div class="container">
+        <div>
+          <a id="gold"
+            ><img class="icon" src="/images/lines/gold.png" alt="gold lane"
+          /></a>
+
+          <h2>Gold Lane</h2>
+          <p>
+            <span class="red">Marksmen</span> rely on equipment and are
+            recommended to farm in the Gold Lane.
+            <br />
+            Despite their weak early game,
+            <span class="red">Marksmen</span> can take advantage of the extra
+            Gold from the special siege minions to purchase equipment faster and
+            provide high sustained damage for their teams in the late game.
+            <br />
+            Gold Lane is the side lane away from the first Turtle's spawn
+            location.
+          </p>
+        </div>
+        <div>
+          <h3>Unit Sight</h3>
+          <p>
+            Each minion grants sight over surrounding 8 units but cannot detect
+            enemies in the bush or the Camouflage state.
+          </p>
+          <h3>Minion Abilities</h3>
+          <p>
+            <span class="yellow">Gold Rush</span>: The first 10 waves of siege
+            minions grant 35% extra Gold.
+            <br />
+            <span class="yellow">Rapid March</span>: Side-lane minions have
+            higher Movement Speed.
+            <br />
+            <span class="yellow">Surging Morale</span>: Minions gain 10 extra
+            Movement Speed per minute.
+            <br />
+            <span class="yellow">Charging Horn</span>: Once the enemy's
+            <span class="yellow">Base Turret</span> is destroyed, stronger
+            <span class="yellow">Super Minions</span> will begin to spawn in the
+            corresponding lane.
+          </p>
+        </div>
+      </div>
+
+      <!-- gold -->
+      <div class="container">
+        <div>
+          <a id="exp">
+            <img class="icon" src="/images/lines/exp.png" alt="exp lane" />
+          </a>
+          <h2>EXP Lane</h2>
+          <p>
+            <span class="red">Fighters</span> rely on level and are recommended
+            to take the EXP Lane to level up faster and join the fight over the
+            first Turtle. Balanced in both offense and defense,
+            <span class="red">Fighters</span> and certain
+            <span class="red">Tanks</span> can take advantage of the extra EXP
+            from the special siege minions to help their teams gain a lead in
+            the early game.
+            <br />
+            EXP Lane is the side lane closer to the first Turtle's spawn
+            location.
+          </p>
+        </div>
+        <div>
+          <h3>Unit Sight</h3>
+          <p>
+            Each minion grants sight over surrounding 8 units but cannot detect
+            enemies in the bush or the Camouflage state.
+          </p>
+          <h3>Minion Abilities</h3>
+          <p>
+            <span class="yellow">Level Rush</span>: The first 10 waves of siege
+            minions grant 35% extra EXP.
+            <br />
+            <span class="yellow">Rapid March</span>: Side-lane minions have
+            higher Movement Speed.
+            <br />
+            <span class="yellow">Surging Morale</span>: Minions gain 10 extra
+            Movement Speed per minute.
+            <br />
+            <span class="yellow">Charging Horn</span>: Once the enemy's
+            <span class="yellow">Base Turret</span> is destroyed, stronger
+            <span class="yellow">Super Minions</span> will begin to spawn in the
+            corresponding lane.
+          </p>
+        </div>
+      </div>
+      <!-- exp -->
+      <div class="container">
+        <div>
+          <a id="jgl"
+            ><img class="icon" src="/images/lines/jgl.png" alt="jungle"
+          /></a>
+          <h2>Jungle</h2>
+          <p>
+            <span class="red">Assassins</span> have the highest damage and are
+            recommended to farm in the <span class="yellow">Jungle</span>.
+            <br />
+            Despite their high mobility and single-target burst,
+            <span class="red">Assassins</span> are often weak in lanes. So it's
+            better they farm in the jungle in the early game and look for
+            opportunities to take down enemies that are alone.
+            <span class="yellow">Jungling Boots</span> is also recommended, as
+            it grants bonus creep rewards.
+          </p>
+          <p>
+            Note that <span class="yellow">Retribution</span> is required to
+            purchase the <span class="yellow">Jungling Boots</span> and enjoy
+            the creep reward bonuses, though the rewards from minions will be
+            reduced in the early game.
+          </p>
+        </div>
+        <div>
+          <h3>Battlefeild Tiemline</h3>
+          <p>
+            In the first 2m, heroes equipped with Retribution will gain 15%
+            Damage Reduction in the <span class="yellow">Allied Jungle</span>.
+          </p>
+        </div>
+      </div>
+      <!-- jgl -->
+      <div class="container">
+        <div>
+          <a id="roam">
+            <img class="icon" src="/images/lines/roam.png" alt="roam" />
+          </a>
+          <h2>Roaming</h2>
+          <p>
+            <span class="red">Supports</span> and
+            <span class="red">Tanks</span> don't rely on equipment and are
+            recommended to <span class="yellow">Roam</span> to better protect
+            their allies during the laning phase.
+            <br />
+            Equipped with either strong engage or buff skills,
+            <span class="red">Supports</span> and
+            <span class="red">Tanks</span>
+            need to look for the right timing to initiate teamfights to lead
+            their teams to victory.
+          </p>
+          <p>
+            <span class="yellow">Roaming Equipment</span> is also recommended,
+            as it allows their allies to enjoy full rewards from minions and
+            creeps and grants bonus Gold and EXP.
+          </p>
+        </div>
+      </div>
+      <!-- roam -->
+    </div>
+    <!-- main -->
+    <footer></footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
