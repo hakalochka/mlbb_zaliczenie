@@ -149,6 +149,11 @@ img {
 @media (max-width: 590px) {
   #main {
     margin-top: 37px;
+  }
+}
+
+@media (max-width: 705px) {
+  #main {
     flex-direction: column;
   }
 
@@ -160,6 +165,10 @@ img {
     padding: 7px 15px;
     font-size: 14px;
     text-align: center;
+  }
+
+  #slider {
+    width: 100%;
   }
 
   .text {
