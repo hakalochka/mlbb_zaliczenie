@@ -53,6 +53,49 @@
         </p>
       </div>
       <!-- text -->
+      <p id="dynamicDate"></p>
+      <script>
+        function getFormattedDate() {
+          const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ];
+
+          const now = new Date();
+          const day = now.getDate();
+          const month = months[now.getMonth()];
+          const hours = now.getHours().toString().padStart(2, "0");
+          const minutes = now.getMinutes().toString().padStart(2, "0");
+          const seconds = now.getSeconds().toString().padStart(2, "0");
+
+          const formattedDate = `${day} ${month} ${hours}:${minutes}:${seconds}`;
+          return formattedDate;
+        }
+
+        // Example usage: Update the element with id="dynamicDate" every second
+        function updateDynamicDate() {
+          const dynamicDateElement = document.getElementById("dynamicDate");
+          if (dynamicDateElement) {
+            dynamicDateElement.textContent = getFormattedDate();
+          }
+        }
+
+        // Initial update
+        updateDynamicDate();
+
+        // Update the dynamic date every second
+        setInterval(updateDynamicDate, 1000);
+      </script>
     </div>
     <!-- main -->
     <footer></footer>
