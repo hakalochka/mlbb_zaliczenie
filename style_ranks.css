@@ -74,7 +74,7 @@ button {
 
   cursor: pointer;
 
-  background-image: url(/images/nav_bg_active.jpg);
+  background-image: url(images/nav_bg_active.jpg);
   border: none;
   border-radius: 8px;
 }
