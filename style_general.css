@@ -48,12 +48,12 @@ li {
 }
 
 .navbar a:hover {
-  background-image: url("/images/nav_bg.jpg");
+  background-image: url("images/nav_bg.jpg");
   background-color: #b69361;
 }
 
 .navbar .active {
-  background-image: url("/images/nav_bg_active.jpg");
+  background-image: url("images/nav_bg_active.jpg");
   background-color: #b69361;
 }
 
@@ -61,7 +61,7 @@ li {
   position: relative;
   /* margin-left: -9px; */
   /* z-index: -5; */
-  background-image: url("/images/battlefield.jpg");
+  background-image: url("images/battlefield.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
