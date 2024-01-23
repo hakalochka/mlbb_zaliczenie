@@ -67,6 +67,34 @@ li {
   height: 100%;
 }
 
+.red {
+  color: red;
+}
+
+.yellow {
+  color: rgb(283, 210, 154);
+}
+
+.orange {
+  color: rgb(248, 163, 31);
+}
+
+.green {
+  color: rgb(83, 199, 129);
+}
+
+.true_yellow {
+  color: rgb(255, 230, 0);
+}
+
+.blue {
+  color: rgb(94, 237, 244);
+}
+
+.purple {
+  color: rgb(140, 129, 235);
+}
+
 @media (max-width: 590px) {
   .navbar {
     font-size: 12px;
