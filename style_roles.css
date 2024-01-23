@@ -109,7 +109,19 @@ a {
 }
 
 @media (max-width: 590px) {
+  body {
+    background-image: none;
+  }
+
   #main {
-    margin-top: 37px;
+    margin-top: 35px;
+  }
+
+  #text {
+    width: 85%;
+  }
+
+  #battlefeild img {
+    height: 8%;
   }
 }
