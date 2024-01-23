@@ -95,14 +95,12 @@ li {
   color: rgb(140, 129, 235);
 }
 
-@media (min-width: 451px) and (max-width: 590px) {
+@media (max-width: 590px) {
   .navbar {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 10px;
     
   }
 }
 
-@media (max-width: 450px) {
-  font-size: 11px;
-  padding: 10px;
-}
+
