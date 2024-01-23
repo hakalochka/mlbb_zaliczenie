@@ -1,3 +1,9 @@
+body {
+  background-image: url("/images/bg4.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
 #main {
   margin-top: 42px;
   width: 100%;
@@ -5,6 +11,123 @@
   box-sizing: border-box;
   overflow: hidden;
   /* z-index: -6; */
+}
+#battlefeild img {
+  height: 4.2%;
+  aspect-ratio: 1/1;
+
+  z-index: 2;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#orange_b {
+  top: 65%;
+  left: 50%;
+}
+
+#purple_b {
+  top: 41%;
+  left: 36%;
+}
+
+#golem_b {
+  top: 24%;
+  left: 52%;
+}
+
+#beetle_b {
+  top: 69%;
+  left: 65%;
+}
+
+#lizard_b {
+  top: 44%;
+  left: 77%;
+}
+
+#crab_b {
+  top: 59%;
+  left: 81%;
+}
+
+#lord_b {
+  top: 25%;
+  left: 40%;
+}
+
+#turtle_b {
+  top: 55%;
+  left: 68%;
+}
+
+#speed_b {
+  top: 29%;
+  left: 44%;
+}
+
+#creeps {
+  width: 77.5%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* #text div {
+  padding: 10px;
+} */
+
+.icon {
+  height: 300px;
+  margin-right: 10px;
+  margin-top: 5px;
+
+  float: left;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 600;
+}
+p {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.container {
+  padding: 10px;
+}
+
+.map_animation {
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.9); /* Initial shadow */
+  animation: shadowAnimation 1.5s infinite alternate; /* Animation properties */
+}
+
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0);
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: rgb(283, 210, 154);
 }
 
 @media (max-width: 590px) {
