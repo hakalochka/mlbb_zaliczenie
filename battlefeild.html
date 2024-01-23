@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Battlefeild</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="style_battlefeild.css" />
-    <link rel="stylesheet" href="style_general.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/style_battlefeild.css" />
+    <link rel="stylesheet" href="/style_general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,25 +21,414 @@
   <body>
     <nav class="navbar">
       <ul>
-        <li id="home" >
-          <a href="./index.html">Home</a>
+        <li id="home">
+          <a href="/index.html">Home</a>
         </li>
-        <li><a href="./ranks.html">Ranks</a></li>
-        <li><a href="./heroes.html">Heroes</a></li>
-        <li><a href="./roles.html">Roles</a></li>
-        <li class="active"><a href="./battlefeild.html">Battlefield</a></li>
-        <li><a href="./modes.html">Modes</a></li>
+        <li><a href="/ranks.html">Ranks</a></li>
+        <li><a href="/heroes.html">Heroes</a></li>
+        <li><a href="/roles.html">Roles</a></li>
+        <li class="active"><a href="/battlefeild.html">Battlefield</a></li>
+        <li><a href="/modes.html">Modes</a></li>
       </ul>
     </nav>
     <!-- navbar -->
+
     <div class="resizableWindow" id="main">
-      <div id="battlefeild"></div>
+      <div id="battlefeild">
+        <a href="#orange"
+          ><img
+            class="map_animation"
+            id="orange_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#orange"
+          ><img
+            class="map_animation"
+            id="orange_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#purple"
+          ><img
+            class="map_animation"
+            id="purple_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#golem"
+          ><img
+            class="map_animation"
+            id="golem_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#crab"
+          ><img
+            class="map_animation"
+            id="crab_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#beetle"
+          ><img
+            class="map_animation"
+            id="beetle_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#lizard"
+          ><img
+            class="map_animation"
+            id="lizard_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#lord"
+          ><img
+            class="map_animation"
+            id="lord_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#turtle"
+          ><img
+            class="map_animation"
+            id="turtle_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+
+        <a href="#speed"
+          ><img
+            class="map_animation"
+            id="speed_b"
+            src="images/Creeps/icon.png"
+            alt="?"
+        /></a>
+      </div>
+      <!-- line icons -->
     </div>
-    <div id="creeps"></div>
-    
+    <div id="creeps">
+      <div class="container">
+        <a id="orange"
+          ><img
+            class="icon"
+            src="images/Creeps/orange.jpg"
+            alt="Molten Fiend"
+          />
+        </a>
+        <h2>Molten Fiend</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>
+          Creep Rewards For 75s, grants the killer a certain amount of
+          <span class="yellow"
+            >Adaptive Penetration (Physical Penetration if the hero's extra
+            Physical Attack isn't lower than their extra Magic Power, and Magic
+            Penetration if otherwise)</span
+          >.
+          <br />
+          <span class="yellow">Molten Morale</span>: The killer's attacks on
+          enemy heroes deal extra damage according to their role and slow the
+          target for 1s. Cooldown: 3s.
+          <br />
+          <span class="yellow">Assassin/Fighter/Tank</span>: 5% Adaptive
+          Penetration, deals 50
+          <span class="orange">(+20%Total Physical Attack)</span>
+          <span class="green">(+30*Attack Speed)</span> extra
+          <span class="true_yellow">True Damage</span> and slows the target by
+          60%.
+          <br />
+          <span class="yellow">Marksman/Mage/Support</span>: 10% Adaptive
+          Penetration, deals 50
+          <span class="orange">(+30%Total Physical Attack)</span
+          ><span class="green">(+50*Attack Speed)</span> extra
+          <span class="true_yellow">True Damage</span> and slows the target by
+          20%.
+        </p>
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+          <br />
+          Upon death, Molten Fiend will drop 3
+          <span class="yellow">Fruits</span> that last 5s on the spot. Each
+          Fruit restores 153 <span class="orange">(+1%Attack)</span>
+          HP and 0.2% Max Mana for the hero who picks it up.
+        </p>
+      </div>
+      <!-- orange -->
+
+      <div class="container">
+        <a id="purple"
+          ><img
+            class="icon"
+            src="images/Creeps/purple.jpg"
+            alt="Thunder Fenrir"
+          />
+        </a>
+        <h2>Thunder Fenrir</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>
+          For 75s, reduces the killer's skill cooldown by 10%, mana cost by 60%,
+          and energy cost by 25%.
+          <br />
+          <span class="yellow">Thunder Morale</span>: The killer restores Max HP
+          according to the type of unit they kill (3% for minions, 5% for
+          heroes, and 12% for creeps)
+        </p>
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+          <br />
+          Upon death, Thunder Fenrir will drop 3
+          <span class="yellow">Fruits</span> that last 5s on the spot. Each
+          Fruit restores 153<span class="orange"
+            >(+1% Total Physical Attack)</span
+          >
+          HP and 0.2% Max Mana for the hero who picks it up.
+        </p>
+      </div>
+      <!-- purple -->
+
+      <div class="container">
+        <a id="golem"
+          ><img class="icon" src="images/Creeps/golem.jpg" alt="Lava Golem" />
+        </a>
+        <h2>Lava Golem</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>The killer restores 5% Max Mana and 350 HP over 2s.</p>
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+          <br />
+          Lava Golem doesn't have any other abilities.
+        </p>
+      </div>
+      <!-- golem -->
+
+      <div class="container">
+        <a id="crab"
+          ><img
+            class="icon"
+            src="images/Creeps/crab.jpg"
+            alt="Scavenger Crab"
+          />
+        </a>
+        <h2>Scavenger Crab</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>
+          The Scavenger Crab in Gold Lane drops 3
+          <span class="yellow">Gold</span> that lasts 10s. The hero who picks it
+          up gains 25 Gold.
+          <br />
+          The Scavenger Crab in Exp Lane drops 3
+          <span class="yellow">Exp</span> Scrolls that last 10s. The hero who
+          picks them up gains 20 Exp.
+        </p>
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+          <br />
+          Creeps won't recover HP immediately after leaving combat.
+        </p>
+      </div>
+      <!-- crab -->
+
+      <div class="container">
+        <a id="beetle"
+          ><img class="icon" src="images/Creeps/beetle.jpg" alt="Fire Beetle" />
+        </a>
+        <h2>Fire Beetle</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>The killer restores 5% Max Mana and 350 HP over 2s.</p>
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+          <br />
+          Upon death, <span class="yellow">Fire Beetle</span> will release a
+          weaker <span class="yellow">Little Fire Beetle</span> on the spot.
+        </p>
+      </div>
+      <!-- beetle -->
+
+      <div class="container">
+        <a id="lizard"
+          ><img
+            class="icon"
+            src="images/Creeps/lizard.jpg"
+            alt="Horned Lizard"
+          />
+        </a>
+        <h2>Horned Lizard</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>Restores 5% Mana and 350 HP over 2s.</p>
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+          <br />
+          When HP is below 50%, gains 70 Physical & Magic Defense.
+        </p>
+      </div>
+      <!-- lizard -->
+
+      <div class="container">
+        <a id="speed"
+          ><img
+            class="icon"
+            src="images/Creeps/speed.jpg"
+            alt="Lithowanderer"
+          />
+        </a>
+        <h2>Lithowanderer</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>
+          The killer gains a <span class="yellow">Walkie Grass</span> that
+          follows them around, increases their Movement Speed in the river by
+          15%, and restores 1% Mana per second for them and nearby allied
+          heroes.
+          <br />
+          A <span class="yellow">Stone Roamer</span> will also spawn on the spot
+          and begin to patrol the area for 45s. When an enemy enters the Stone
+          Roamer's sight range, the Stone Roamer will send an alert and expose
+          the enemy's location.
+          <br />
+          <span class="yellow">Stone Roamer</span> can resist 10 attacks.
+        </p>
+        <h3>Creep Abilities</h3>
+        <p>
+          <span class="yellow">Lithowanderer</span> and
+          <span class="yellow">Stone Roamer</span> are mild in nature and won't
+          fight back even when attacked.
+        </p>
+      </div>
+      <!-- speed -->
+
+      <div class="container">
+        <a id="turtle"
+          ><img
+            class="icon"
+            src="images/Creeps/turtle.jpg"
+            alt="Dragon Turtle"
+          />
+        </a>
+        <h2>Dragon Turtle</h2>
+
+        <h3>Battlefeild Impact</h3>
+        <p>
+          Battlefield Impact The first Turtle's spawn location determines the
+          features of the side lanes. The lane closer to the location is the
+          <span class="red">EXP Lane</span>, while the other is the
+          <span class="red">Gold Lane</span>, In the 10s before the Turtle
+          spawns/aft er it's killed, a current will appear that flows
+          towards/away from it. Follow this current to constantly boost your
+          Movement Speed by up to 50%.
+        </p>
+
+        <h3>Creep Rewards</h3>
+        <p>
+          If the killer takes no damage for 5s, they'll receive a 400 (+40*Hero
+          Level) <span class="green">Shield</span> and gain 20 (+2 *Hero Level)
+          <span class="orange">Physical Attack</span> and 25 (+4*Hero Level)
+          <span class="blue">Magic Power</span> while the Shield is active.
+          Other heroes on the same team will also receive a one-time 200
+          (+20*Hero Level) <span class="green">Shield</span>.
+        </p>
+
+        <h3>Creep Abilities</h3>
+        <p>
+          Launches an attack every 1s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span>.
+        </p>
+      </div>
+      <!-- turtle -->
+
+      <div class="container">
+        <a id="lord"
+          ><img
+            class="icon"
+            src="images/Creeps/lord.jpg"
+            alt="Elemental Lord"
+          />
+        </a>
+        <h2>Elemental Lord</h2>
+
+        <h3>Creep Rewards</h3>
+        <p>
+          Joins the killer's team on the next Minion spawn, greatly increasing
+          the attributes of the next 1 wave(s) of allied Minions, and will help
+          the team push down the enemy's weakest lane until it is defeated
+        </p>
+        <p>
+          Becomes <span class="yellow">Enhanced</span> at 12 minutes, after
+          which the Summoned Lord gains the ability to charge at an enemy
+          Turret, dealing <span class="true_yellow">True Damage</span> equal to
+          50% of the Turret's Max HP.
+        </p>
+        <p>
+          <span class="yellow">Evolves</span> at 18 minutes, after which the
+          Neutral Lord gains 30%-5% Damage Reduction (decreases as the number of
+          nearby heroes increases) while the Summoned Lord gains 5%-25% Damage
+          Reduction (increases as the number of nearby allied heroes increases)
+          and allows nearby allies to deal 400
+          <span class="orange">(+60%Total Physical Attack)</span>
+          <span class="blue">(60% Total Magic Power)</span>
+          <span class="green">(3%Total HP)</span> extra
+          <span class="purple">Magic Damage</span> on their attacks. Cooldown:
+          2s.
+        </p>
+        <p>
+          The attributes of the <span class="yellow">Elemental Lord</span> will
+          stop growing at 30 minutes.
+        </p>
+
+        <h3>Neutral Abilities</h3>
+        <p>
+          Attacks every 1s, dealing
+          <span class="red">Physical Damage</span> equal to (+20%Attack) plus
+          10% of the target's Max HP. Launches a
+          <span class="yellow">Thunder Strike</span> every 4s, dealing
+          <span class="true_yellow">True Damage</span> equal to 50 plus 15% of
+          the target's Max HP in a large area around the target.
+          <br />
+          Unleashes <span class="yellow">Ocean Force</span>
+          every 8s, dealing
+          <span class="orange">(+100%Attack)</span>
+          <span class="red">Physical Damage</span> to nearby enemies and
+          knocking them airborne for 1s after a short delay.
+        </p>
+      </div>
+      <!-- lord -->
     </div>
     <!-- main -->
-    <footer></footer>
+
     <script src="script.js"></script>
   </body>
 </html>
