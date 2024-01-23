@@ -20,7 +20,7 @@ body {
 }
 
 #role {
-  width: 250px;
+  width: 20%;
 
   /* min-width: 144px; */
 
@@ -52,11 +52,6 @@ body {
   );
 }
 
-/* #slider {
-  
-  width: auto;
-} */
-
 #tank {
   display: block;
 }
@@ -71,6 +66,10 @@ body {
 
 img {
   vertical-align: middle;
+}
+
+#slider {
+  width: 80%;
 }
 
 /* Slideshow container */
