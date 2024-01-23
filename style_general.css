@@ -98,5 +98,6 @@ li {
 @media (max-width: 590px) {
   .navbar {
     font-size: 12px;
+    padding: 10px;
   }
 }
