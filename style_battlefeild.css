@@ -104,13 +104,14 @@ p {
 }
 
 .map_animation {
-  box-shadow: 0 0 20px rgba(0, 150, 255, 0.9); /* Initial shadow */
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 150, 255, 1); /* Initial shadow */
   animation: shadowAnimation 1.5s infinite alternate; /* Animation properties */
 }
 
 @keyframes shadowAnimation {
   0% {
-    box-shadow: 0 0 20px rgba(0, 150, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 150, 255, 1);
   }
   100% {
     box-shadow: 0 0 20px rgba(0, 150, 255, 0);
