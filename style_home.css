@@ -1,47 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url("images/bg3_v2.jpg");
+  /* background-image: url("/images/bg2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  background-image: linear-gradient(rgb(35, 38, 50), rgb(49, 81, 150));
 }
 
 #main {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  /* justify-content: start; */
+  /* height: 100vh; */
+}
+
+#role {
+  width: 20%;
+
+  /* min-width: 144px; */
+
+  /* margin-right: 15px; */
+  /* border-top: 1px rgb(68, 148, 192) solid;
+  border-right: 1px rgb(68, 148, 192) solid; */
+}
+
+#role > p {
+  margin: 0;
+  padding: 15px 20px;
   width: 100%;
-  /* margin: auto; */
-  text-align: center;
+  text-align: end;
+
+  /* font-size: large; */
+  color: rgb(165, 221, 252);
+  border-bottom: 1px rgb(68, 148, 192) solid;
 }
 
-#logo {
-  width: 50%;
-  /* margin: auto; */
-  margin-top: 115px;
+#role > p:hover {
+  cursor: pointer;
 }
 
-#text {
-  width: 66%;
-  margin: 40px auto;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 20px;
-  font-weight: 300;
-  /* height: auto; */
-  padding: 50px 0;
-  
-  border-radius: 25px;
+.active_p {
+  background-image: linear-gradient(
+    to right,
+    rgba(68, 148, 192, 0),
+    rgb(44, 115, 154)
+  );
 }
 
-p {
-  width: 83%;
+#tank {
+  display: block;
+}
+
+#fighter,
+#assassin,
+#mm,
+#mage,
+#supp {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+#slider {
+  width: 80%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  width: 100%;
+  position: relative;
   margin: auto;
 }
 
-#para1 {
-  margin-bottom: 25px;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(165, 221, 252);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-@media (max-width: 670px) {
-  #text {
-    width: 75%;
-    font-size: 15px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Caption text */
+.text {
+  color: rgb(165, 221, 252);
+  font-size: 19px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.active,
+.dot:hover {
+  background-color: rgb(42, 122, 164);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 590px) {
+  #main {
+    margin-top: 37px;
+  }
+}
+
+@media (max-width: 705px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #role {
+    width: 100%;
+  }
+
+  #role > p {
+    padding: 7px 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #slider {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 14px;
   }
 }
