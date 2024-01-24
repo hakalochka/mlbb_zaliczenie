@@ -114,7 +114,7 @@ a {
   }
 
   #main {
-    margin-top: 35px;
+    margin-top: 34px;
   }
 
   #text {
@@ -123,11 +123,5 @@ a {
 
   #battlefeild img {
     height: 9%;
-  }
-}
-
-@media (max-width: 450px) {
-  p {
-    font-size: 17px;
   }
 }
