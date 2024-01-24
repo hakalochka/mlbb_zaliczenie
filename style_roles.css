@@ -125,3 +125,9 @@ a {
     height: 9%;
   }
 }
+
+@media (max-width: 380px) {
+  #main {
+    margin-top: 23px;
+  }
+}

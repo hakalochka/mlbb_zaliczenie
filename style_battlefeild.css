@@ -152,3 +152,9 @@ a {
     width: 49%;
   }
 }
+
+@media (max-width: 380px) {
+  #main {
+    margin-top: 23px;
+  }
+}
