@@ -99,6 +99,8 @@ li {
   .navbar {
     font-size: 11px;
   }
+
+  .navbar a {
+    padding: 10px 12px;
+  }
 }
-
-
