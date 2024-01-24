@@ -125,11 +125,6 @@ img {
   );
 }
 
-.active,
-.dot:hover {
-  background-color: rgb(42, 122, 164);
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -178,5 +173,11 @@ img {
 @media (max-width: 420px) {
   #main {
     margin-top: 30px;
+  }
+
+  .prev,
+  .next {
+    font-size: 15px;
+    padding: 14px;
   }
 }
