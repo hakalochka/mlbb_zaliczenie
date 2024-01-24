@@ -114,3 +114,13 @@ li {
     padding: 10px 7px;
   }
 }
+
+@media (max-width: 300px) {
+  .navbar {
+    font-size: 10px;
+  }
+
+  .navbar a {
+    padding: 10px 7px;
+  }
+}
