@@ -115,7 +115,7 @@ li {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 390px) {
   .navbar {
     font-size: 10px;
   }
