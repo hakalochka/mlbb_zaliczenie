@@ -13,3 +13,13 @@ body {
 h1 {
   color: rgb(212, 176, 124);
 }
+
+@media (max-width: 590px) {
+  body {
+    background-image: none;
+  }
+
+  #main {
+    margin-top: 35px;
+  }
+}
