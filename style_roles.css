@@ -125,3 +125,9 @@ a {
     height: 9%;
   }
 }
+
+@media (max-width: 450px) {
+  p {
+    font-size: 17px;
+  }
+}

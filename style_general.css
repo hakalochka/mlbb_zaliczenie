@@ -100,7 +100,17 @@ li {
     font-size: 11px;
   }
 
+  /* .navbar a {
+    padding: 10px 7px;
+  } */
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    font-size: 10px;
+  }
+
   .navbar a {
-    padding: 10px 12px;
+    padding: 10px 7px;
   }
 }
